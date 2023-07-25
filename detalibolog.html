@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/detaliblog.css">
+    <link rel="shortcut icon" href="./img/mini-logo.png">
+    <title>coca</title>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="logo">
+        <nav class="header-nav">
+            <ul class="nav-ul">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboute.html">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./pricing.html">Pricing</a></li>
+            </ul>
+            <div class="header-div1">
+                <a href="./content.html"><img src="./img/contactus.png" alt=""> </a><br>
+                <img src="./img/chiziq.png" alt="">
+            </div>
+        </nav>
+    </header>
+    <!-- Content-1 -->
+    <div class="content1">
+        <h1>How we perform long- <br>running tasks using AWS <br> services</h1>
+    </div>
+
+    <!-- Content-2 -->
+    <div class="content2">
+        <div class="content2-div1">
+            <div class="div83-div1">
+                <img src="./img/man1.png" alt="">
+                <div class="div83-div2">
+                    <h2>Renee Wells</h2>
+                    <p>Product Designer, Quotient</p>
+                </div>
+            </div>
+            <div class="con2-div2">
+                <p>10 min read  November 10, 2023</p>
+            </div>
+        </div>
+        <div class="content2-div2">
+            <img src="./img/detalblog-img1.png" alt="">
+            <p>Depending on the input, this can result in using a lot of processing power and time. The whole process would <br> take approximately 5 seconds to return a result to the client. Keep in mind we're talking about 1 item, a contact <br> from a contact book. After a while, a new requirement is added. Solution must support companies that <br> manage their contacts organized in files. We agreed to develop a web application that would support upload <br> of dataset files, like .csv. The new web application should support third party integrations. Some of them are <br> the ESP/CRM services, like Mailchimp. User does not need to see the result immediately. System can later <br> notify the user about the result, when the process finishes. This information is the key that we need to <br> leverage on when developing our solution. So here's how we did it.</p>
+        </div>
+    </div>
+    <!-- Contrnt-3 -->
+    <div class="content3">
+        <div class="content3-div1">
+            <h1>Initial approach</h1>
+            <p>
+                Our initial approach went like this: The web application would read a .csv file line-by-line and submit an array <br> of entries to the backend REST API. Processing is in real time, immediately after the user makes a request for <br> the process to start, he expects a result. Another approach is to apply vertical scaling to AWS architecture. <br> Meaning we used larger, more expensive instances that have more RAM and processing power. This system <br> worked well for smaller datasets, maybe up to 5k entries, but for larger datasets multiple problems arose. This <br> solution is prone to failure due to long request time. Also, because of some 3rd party services that aren't <br> optimized for large scale loads or they don't have batch endpoints. 3rd party services also tend to protect <br> their architecture from making a huge bill on their end. The whole process was done in real-time. The request <br> can take a lot of time hanging in there while the backend would do all the work and return the result to the <br> client. The request was limited to 300 seconds (at time of writing the article) before AWS would cancel it… <br> Also I need to mention that the user has to wait a few minutes to see the results. They can't use the app <br> during the process, which makes for a bad user experience.
+            </p>
+        </div>
+        <div class="content3-div2">
+            <img src="./img/girl.png" alt="">
+            <div class="con3-div2-div1">
+                <div class="internet">
+                    <img class="fasebook" src="./img/fasebook2.png" alt="">
+                    <img src="./img/twitter.png" alt="">
+                    <img src="./img/in.png" alt="">
+                    <img src="./img/instagram.png" alt="">
+                    <p>Share this article</p>
+                </div>
+                <div class="write">
+                    <p class="write-p1">Written by</p>
+                    <h2>Renee Wells</h2>
+                    <p class="write-p2">Product Designer, Quotient</p>
+                    <p class="write-p3">Skilled in React Native, iOS and backend, Toni has a demonstrated <br> knowledge of the information technology and services industry, with plenty <br> of hands-on experience to back it up.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-div1">
+            <div class="footer-div12">
+                <h1>Think beyond the wave</h1>
+                <div class="footer-p">
+                    <p>Ask about Sans products, pricing, <br> implementation, or anything else. Our highly <br> trained reps are standing by, ready to help</p>
+                </div>
+            </div>
+            <button class="footer-button1">Try for free</button>
+        </div>
+        <div class="footer-div2">
+            <div class="footer-div3">
+                <img src="./img/white-logo.png" alt="">
+                <p>We built an elegant solution. Our team <br> created a fully integrated sales and <br> marketing solution for SMBs</p>
+            </div>
+            <div class="footer-div4">
+                <div class="foot-div3-div1">
+                    <h2>Company</h2>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="foot-div3-div1">
+                    <h2>Product</h2>
+                    <ul>
+                        <li><a href="#">Sales Software</a></li>
+                        <li><a href="#">Marketplace</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="foot-div3-div1">
+                    <h2>Discover</h2>
+                    <ul>
+                        <li><a href="#">CRM Comparision</a></li>
+                        <li><a href="#">Partner Program</a></li>
+                        <li><a href="#">What is CRM</a></li>
+                        <li><a href="#">Resource</a></li>
+                    </ul>
+                </div>
+                <div class="foot-div3-div1">
+                    <h2>Help Center</h2>
+                    <ul>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Knowledge Base</a></li>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-div5">
+            <img class="footer-chiziq" src="./img/chiziq3.png" alt="">
+            <div class="footer-div6">
+                <div class="footer-imgp">
+                    <div class="internet">
+                        <img src="./img/fasebook.png" alt="">
+                        <img src="./img/twittwr2.png" alt="">
+                        <img src="./img/instagram2.png" alt="">
+                        <img src="./img/in2.png" alt="">
+                    </div>
+                    <div class="footer-p2">
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                        <p>Support</p>
+                    </div>
+                </div>
+                <p>© Copyright 2023 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
